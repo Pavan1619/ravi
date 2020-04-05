@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <body>
+        <P>for each element in the array: multiply the value with 10 and update the element value:</P>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <script>
+        var number =[10, 5, 6, 7];
+        number.forEach(myfunction)
+        function myfunction(item, index, arr){
+            arr[index] = item *5;
+        }
+        document.getElementById("demo").innerHTML = number
+        </script>
+
+        <p>click the button to get a new array with the full name of each person in the array. </p>
+        <button onclick="myfunction1()">try it</button>
+        <p>new array: <span id="demo"></span> </p>
+        <script>
+        var person=[
+            {firstname : "sonu", lastname : "sunil"},
+            {firstname : "teja", lastname : "ram"}
+        ];
+        function getfullname(item) {
+            var fullname = [item.firstname,item.lastname].join(" ");
+            return fullname;
+        }
+        function myfunction1() {
+            document.getElementById("demo1").innerHTML = person.map(getfullname);
+        }
+        </script>
+        
+        
+<p>Click the button to get the square root of each element in the array.</p>
+
+<button onclick="myFunction3()">Try it</button>
+
+<p id="demo3"></p>
+
+<script>
+var numbers = [4, 9, 16, 25];
+
+function myFu9nction3() {
+  x = document.getElementById("demo3")
+  x.innerHTML = numbers.map(Math.sqrt);
+}
+</script>
+<p>Click the button to get every element in the array that has a value of 35 or more.</p>
+
+<button onclick="myFunction4()">Try it</button>
+
+<p id="demo4"></p>
+
+<script>
+
+var marks = [
+    {name:'pavan', marks: 65},
+    {name: 'sonu', marks: 75},
+    {name: 'ash', marks: 20};
+]
+marks.forEach(student={
+    arr[mark] = item >=35
+}
+
+  return pass >= 35;
+
+
+function myFunction() {
+  document.getElementById("demo4").innerHTML = [marks];
+}
+</script>
+     </body>
+    </head>
+</html>
